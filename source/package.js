@@ -1,6 +1,10 @@
 enyo.depends(
 	"$lib/layout",
 	"$lib/onyx",
-	"App.css",
-	"App.js"
+	"$lib/mvc",
+	"css",
+	"ext",
+	"models",
+	"controllers",
+	"views"
 );

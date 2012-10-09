@@ -7,3 +7,12 @@
 [submodule "lib/layout"]
 	path = lib/layout
 	url = https://github.com/enyojs/layout.git
+[submodule "lib/mvc"]
+	path = lib/mvc
+	url = https://github.com/clinuz/mvc.git
+[submodule "lib/underscore"]
+	path = lib/underscore
+	url = https://github.com/documentcloud/underscore.git
+[submodule "lib/backbone"]
+	path = lib/backbone
+	url = https://github.com/documentcloud/backbone.git
