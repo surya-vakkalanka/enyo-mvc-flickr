@@ -5,7 +5,9 @@ enyo.kind({
   published: {
     searchString: null,
     page: 0,
-    total: 0
+    total: 0,
+    selectedCid: null,
+    selectedImageUrl: null
   },
   
   search: function () {
@@ -20,7 +22,8 @@ enyo.kind({
   searchStringChanged: function () {
     var s = this.get("searchString");
     if (s && s.length > 0) {
-      this.search();
+      enyo.asyncMethod(this, this.search);
+      this.set("selectedCid", null);
     }
   },
   

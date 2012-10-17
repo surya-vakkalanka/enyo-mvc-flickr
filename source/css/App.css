@@ -19,6 +19,10 @@
 	background-color: #333333;
 }
 
+#Flickr .row.selected {
+  background-color: MidnightBlue;
+}
+
 #Flickr .image {
   min-width: 80%;
   border: solid 5px #ccc;
