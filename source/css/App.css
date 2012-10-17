@@ -1,10 +1,65 @@
-/*
-	Put anything you reference with "url()" in ../assets/
-	This way, you can minify your application, and just remove the "source" folder for production
-*/
-#App {
-  margin: 16px;
-  border-radius: 4px;
-  background-color: silver;
-  padding: 16px;
+#Flickr {
+  color: #fff;
+  background: #555;
+}
+
+#Flickr .center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#Flickr .row {
+  position: relative;
+	border-bottom: 1px solid #0E0E0E;
+	padding: 12px 16px;
+	background-color: #333333;
+}
+
+#Flickr .image {
+  min-width: 80%;
+  border: solid 5px #ccc;
+  box-shadow: 1px 1px 5px #999;
+}
+
+#Flickr img.thumbnail {
+  width: 75px;
+  height: 75px;
+}
+
+#Flickr .row-title {
+  position: absolute;
+	top: 40px;
+	right: 0;
+	left: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#Flickr .main > * {
+  width: 320px;
+}
+
+#Flickr .search {
+  width: 90%;
+}
+
+#Flickr .search img {
+  width: 20px;
+  height: 20px;
+}
+
+#Flickr .picture-view {
+  background: #333;
+  box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
+  -moz-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
+  -webkit-box-shadow: -4px 0px 4px rgba(0,0,0,0.3);
+}
+
+#Flickr .picture-view .imager {
+  position: relative;
 }

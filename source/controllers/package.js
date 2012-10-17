@@ -1,3 +1,4 @@
 enyo.depends(
-  "AppController.js"
+  "AppController.js",
+  "SearchController.js"
 );

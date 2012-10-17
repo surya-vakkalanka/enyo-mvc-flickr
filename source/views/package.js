@@ -1,3 +1,10 @@
 enyo.depends(
-  "App.js"
+  "App.js",
+  "PictureView.js",
+  "Main.js",
+  "Header.js",
+  "List.js",
+  "Search.js",
+  "Imager.js",
+  "Input.js"
 );

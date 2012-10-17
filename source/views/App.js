@@ -1,7 +1,10 @@
 enyo.app({
-  name: "App",
-  controller: "App.AppController",
+  name: "Flickr",
+  layoutKind: "enyo.FittableRowsLayout",
+  store: "Flickr.Store",
   components: [
-    {name: "hello", content: "Hello World", allowHtml: true}
+    {kind: "enyo.Panels", arrangerKind: "enyo.CollapsingArranger", fit: true, components: [
+      {kind: "Flickr.Main"},
+      {kind: "Flickr.PictureView"}]}
   ]
 });
