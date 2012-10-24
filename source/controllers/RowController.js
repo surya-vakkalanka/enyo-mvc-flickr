@@ -19,11 +19,6 @@ enyo.kind({
   },
 
   tapped: function () {
-    
-    // LEFT OFF HERE: maybe use as object controller too and push
-    // reference to image? let views intuitively use the correct
-    // url?
-    
     Flickr.connector.set("selectedCid", this.model.cid);
     this.set("isSelected", true);
   },
