@@ -1,6 +1,11 @@
 #Flickr {
   color: #fff;
   background: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #Flickr .center {
@@ -12,10 +17,24 @@
   margin: auto;
 }
 
+#Flickr .more-row {
+  background-color: #323232;
+}
+
+#Flickr .more-button {
+  color: #fff;
+  margin: 10px;
+}
+
+#Flickr .more-spinner {
+	vertical-align: middle;
+	margin: -4px 0 0 4px;
+}
+
 #Flickr .row {
   position: relative;
 	border-bottom: 1px solid #0E0E0E;
-	padding: 12px 16px;
+	padding: 10px;
 	background-color: #333333;
 }
 
@@ -32,6 +51,11 @@
 #Flickr img.thumbnail {
   width: 75px;
   height: 75px;
+}
+
+#Flickr img.tall {
+  min-width: 0;
+	min-height: 80%;
 }
 
 #Flickr .row-title {
@@ -66,4 +90,17 @@
 
 #Flickr .picture-view .imager {
   position: relative;
+}
+
+
+
+
+#Flickr .dev-stats {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+#Flickr .dev-stats label, span {
+  font-size: .6em;
 }

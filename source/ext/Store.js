@@ -10,14 +10,13 @@ enyo.kind({
     return new enyo.JsonpRequest({url: options.url, callbackName: "jsoncallback"})
       .response(options.success).go(p);
   },
-  
   paramsFor: function (options) {
     return {
       method: this.method,
       format: this.format,
       api_key: this.apiKey,
       per_page: this.pageSize,
-      page: (options.page || 0) * this.pageSize,
+      page: options.page || 1,
       text: options.string || ""
     };
   }

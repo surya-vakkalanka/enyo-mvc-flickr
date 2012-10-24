@@ -6,5 +6,8 @@ enyo.depends(
   "List.js",
   "Search.js",
   "Imager.js",
-  "Input.js"
+  "Input.js",
+  "Row.js",
+  "Image.js",
+  "DevStats.js"
 );
