@@ -4,6 +4,12 @@ enyo.kind({
   controller: "Flickr.ListController",
   classes: "list-scroller",
   fit: true,
+  
+  create: function () {
+    this.inherited(arguments);
+    window.tmp = this;
+  },
+
   components: [
     {name: "item", kind: "Flickr.Row"},
     {classes: "more-row", name: "more", components: [

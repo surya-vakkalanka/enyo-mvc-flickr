@@ -1,13 +1,13 @@
 
 enyo.kind({
   name: "Flickr.Row",
+  kind: "enyo.CollectionRow",
   classes: "row enyo-border-box",
-  controllerClass: "Flickr.RowController",
   published: {
     isSelected: false
   },
   bindings: [
-    {from: "controller.isSelected", to: "isSelected", oneWay: true}
+    {from: "controller.selected", to: "isSelected", oneWay: true}
   ],
   components: [
     {kind: "Flickr.Image", bindProperty: "smallImageUrl", bindTarget: "src", name: "image"},

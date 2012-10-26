@@ -10,5 +10,9 @@ enyo.kind({
   }),
   largeImageUrl: enyo.Computed(function () {
     return enyo.format("%..jpg", this.get("imageUrlPrefix"));
-  })
+  }),
+  
+  defaults: {
+    selected: false
+  }
 });
