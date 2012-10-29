@@ -5,14 +5,13 @@ enyo.kind({
     selectedCid: null
   },
   bindings: [
-    {from: "Flickr.connector.collection", to: "collection"},
-    {from: "selectedCid", to: "Flickr.connector.selectedCid", oneWay: true}
+    {from: "Flickr.connector.collection", to: "collection"}
   ],
   setupItem: function (inSender, inEvent) {
     var m = this.collection.at(inEvent.index),
         c = this.collection.at(inEvent.index+1);
-    this.inherited(arguments);
     m.set({selected: inEvent.selected? true: false});
+    this.inherited(arguments);
     if (inEvent.selected) this.set("selectedCid", m.cid);
     this.owner.$.more.canGenerate = !c;
   },

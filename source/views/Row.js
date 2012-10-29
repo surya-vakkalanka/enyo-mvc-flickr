@@ -2,6 +2,7 @@
 enyo.kind({
   name: "Flickr.Row",
   kind: "enyo.CollectionRow",
+  controller: "Flickr.RowController",
   classes: "row enyo-border-box",
   published: {
     isSelected: false

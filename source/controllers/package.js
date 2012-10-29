@@ -1,5 +1,6 @@
 enyo.depends(
   "SearchController.js",
   "ImagerController.js",
-  "ListController.js"
+  "ListController.js",
+  "RowController.js"
 );
